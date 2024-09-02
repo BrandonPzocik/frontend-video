@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const title = document.getElementById("title").value;
     const description = document.getElementById("description").value;
-    const isComplete = document.getElementById("isComplete").value;
+    const isComplete = document.getElementById("isComplete").checked;
     fetch("http://localhost:4000/tasks", {
       method: "POST",
       headers: {
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }).then(async (res) => {
       console.log(res);
 
-      if (res.status == 400) {
+      if (res.status == 201) {
         alert("Tarea creada con exito");
         await renderAllTask();
       } else {
@@ -76,5 +76,3 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   await renderAllTask();
 });
-
-document.addEventListener("DOMContentLoaded");

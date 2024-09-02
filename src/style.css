@@ -12,3 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+#botonEliminar {
+  max-width: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+#botonEliminar:hover {
+  color: rgb(151, 9, 9);
+}
