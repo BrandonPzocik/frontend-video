@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks CRUD</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Create Task:</h2>
+      <form id="create-task">
+        <div>
+          <label for="title">Name of task:</label>
+          <input type="text" name="title" id="title" />
+        </div>
+
+        <div>
+          <label for="description ">description</label>
+          <input type="text" name="description" id="description" />
+        </div>
+
+        <div>
+          <label for="isComplete">Complete:</label>
+          <input type="checkbox" name="isComplete" id="isComplete" />
+        </div>
+
+        <button type="submit" id="buttom-createTasks">Create</button>
+      </form>
+      <div id="tasksList"></div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
