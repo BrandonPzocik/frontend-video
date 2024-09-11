@@ -22,3 +22,7 @@
 #botonEliminar:hover {
   color: rgb(151, 9, 9);
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

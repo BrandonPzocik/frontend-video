@@ -1,4 +1,4 @@
-import "./style.css";
+import "./src/style.css";
 const $app = document.getElementById("app");
 const $createTaskForm = document.getElementById("create-task");
 const $tasksList = document.getElementById("tasksList");
