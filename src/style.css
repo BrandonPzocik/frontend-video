@@ -13,13 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#deleteBottom {
+.deleteButton {
   max-width: 20px;
   color: red;
   cursor: pointer;
 }
 
-#deleteBottom:hover {
+.deleteButton:hover {
   color: rgb(151, 9, 9);
 }
 
