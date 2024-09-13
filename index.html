@@ -7,27 +7,60 @@
     <title>Tasks CRUD</title>
   </head>
   <body>
-    <div id="app">
-      <h2>Create Task:</h2>
+    <div
+      id="app"
+      class="bg-gray-800 text-white mt-10 sm:mx-auto sm:w-full sm:max-w-md p-6 rounded-lg shadow-md"
+    >
+      <h2 class="text-2xl font-bold mb-6 text-center">Create Task</h2>
       <form id="create-task">
-        <div>
-          <label for="title">Name of task:</label>
-          <input type="text" name="title" id="title" />
+        <div class="mb-4">
+          <label for="title" class="block text-sm font-medium"
+            >Name of task:</label
+          >
+          <input
+            type="text"
+            name="title"
+            id="title"
+            class="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter task name"
+          />
         </div>
 
-        <div>
-          <label for="description ">description</label>
-          <input type="text" name="description" id="description" />
+        <div class="mb-4">
+          <label for="description" class="block text-sm font-medium"
+            >Description:</label
+          >
+          <input
+            type="text"
+            name="description"
+            id="description"
+            class="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter task description"
+          />
         </div>
 
-        <div>
-          <label for="isComplete">Complete:</label>
-          <input type="checkbox" name="isComplete" id="isComplete" />
+        <div class="mb-6">
+          <label for="isComplete" class="inline-flex items-center">
+            <input
+              type="checkbox"
+              name="isComplete"
+              id="isComplete"
+              class="form-checkbox h-5 w-5 text-blue-600 bg-gray-700 border-gray-600 focus:ring-blue-500"
+            />
+            <span class="ml-2 text-sm">Complete</span>
+          </label>
         </div>
 
-        <button type="submit" id="buttom-createTasks">Create</button>
+        <button
+          type="submit"
+          id="buttom-createTasks"
+          class="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 rounded-md text-white font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          Create Task
+        </button>
       </form>
-      <div id="tasksList"></div>
+
+      <div id="tasksList" class="mt-6"></div>
     </div>
     <script type="module" src="src/main.js"></script>
   </body>

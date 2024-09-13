@@ -13,13 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#botonEliminar {
+#deleteBottom {
   max-width: 20px;
   color: red;
   cursor: pointer;
 }
 
-#botonEliminar:hover {
+#deleteBottom:hover {
   color: rgb(151, 9, 9);
 }
 
