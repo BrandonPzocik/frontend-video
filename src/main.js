@@ -54,7 +54,7 @@ const renderTasks = (tasks) => {
       .then(async (res) => {
         console.log(res);
         if (res.status === 200) {
-          alert("Tarea eliminada con éxito");
+          alert("Tarea eliminada con éxito"); 
           $container.remove(); // Remover el contenedor de la tarea
         } else {
           alert("Error al eliminar la tarea");
